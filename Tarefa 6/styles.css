@@ -1,0 +1,105 @@
+:root{
+     --green: #2f4f4f;
+     --yellow: #fff8dc;
+}
+
+#pageTitle {
+     margin: 20px 0px 35px 10px;
+     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-size: 36px;
+     font: bold;
+}
+
+#imagens {
+     margin: 10px 0px 0px 10px;
+}
+
+#exp {
+     border-style: solid;
+     border-color: black;
+     border-width: 2px;
+     
+     background-color: var(--green);
+     width: 250px;
+
+     font-family: 'Courier New', Courier, monospace;
+     color: var(--yellow);
+}
+
+header{
+     margin: 30px 0px 50px 10px;
+     width: 100%;
+     height: auto;
+
+     font-size: 28px;
+     
+     
+}
+
+.image_header{
+     float: left;
+     margin-right: 20px;
+}
+
+.mostrar{
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-size: 20px;
+     color: var(--green);
+}
+
+#buttonText{
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-size: 16px;
+}
+
+/*
+Oculta os elementos com a classe .mostrar
+Oculta os elementos com a classe .hide-action
+*/
+
+#box-1 .mostrar,
+#box-1 .hide-action,
+#box-2 .mostrar,
+#box-2 .hide-action {
+     display: none;
+}
+
+/*
+conforme a HASH atual:
+Mostra os elementos com a classe .mostrar
+Mostra os elementos com a classe .hide-action
+*/
+
+#box-1:target .mostrar,
+#box-1:target .hide-action,
+#box-2:target .mostrar,
+#box-2:target .hide-action {
+     display: block;
+}
+
+
+/*
+conforme a HASH atual:
+Oculta os elementos com a classe .action-action
+*/
+#box-1:target .show-action,
+#box-2:target .show-action
+{
+     display: none;
+}
+
+.blue{
+     background-color: cornflowerblue;
+     color: white;
+}
+
+.red{
+     background-color:crimson;
+     color: white;
+}
+
+.black{
+     background-color: black;
+     color: white;
+}
+
